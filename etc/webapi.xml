@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Eriocnemis, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <!-- web api -->
+    <route url="/V1/eriocnemis/salesAutoCancelRule/:ruleId" method="GET">
+        <service class="Eriocnemis\SalesAutoCancelRuleApi\Api\RuleRepositoryInterface" method="get"/>
+        <resources>
+            <resource ref="Eriocnemis_AutoCancel::rule"/>
+        </resources>
+    </route>
+    <route url="/V1/eriocnemis/salesAutoCancelRule/search" method="GET">
+        <service class="Eriocnemis\SalesAutoCancelRuleApi\Api\RuleRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="Eriocnemis_AutoCancel::rule"/>
+        </resources>
+    </route>
+    <route url="/V1/eriocnemis/salesAutoCancelRule" method="POST">
+        <service class="Eriocnemis\SalesAutoCancelRuleApi\Api\RuleRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Eriocnemis_AutoCancel::rule_edit"/>
+        </resources>
+    </route>
+    <route url="/V1/eriocnemis/salesAutoCancelRule/:ruleId" method="PUT">
+        <service class="Eriocnemis\SalesAutoCancelRuleApi\Api\RuleRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Eriocnemis_AutoCancel::rule_edit"/>
+        </resources>
+    </route>
+    <route url="/V1/eriocnemis/salesAutoCancelRule/validate" method="POST">
+        <service class="Eriocnemis\SalesAutoCancelRuleApi\Api\RuleRepositoryInterface" method="validate"/>
+        <resources>
+            <resource ref="Eriocnemis_AutoCancel::rule_edit"/>
+        </resources>
+    </route>
+    <route url="/V1/eriocnemis/salesAutoCancelRule/:ruleId" method="DELETE">
+        <service class="Eriocnemis\SalesAutoCancelRuleApi\Api\RuleRepositoryInterface" method="delete"/>
+        <resources>
+            <resource ref="Eriocnemis_AutoCancel::rule_delete"/>
+        </resources>
+    </route>
+</routes>
