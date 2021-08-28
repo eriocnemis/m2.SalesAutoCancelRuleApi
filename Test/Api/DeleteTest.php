@@ -128,7 +128,9 @@ class DeleteTest extends WebapiAbstract
             $this->assertTrue($result);
 
             try {
-                $this->ruleRepository->get((int)$this->rule->getId());
+                if (null !== $this->rule) {
+                    $this->ruleRepository->get((int)$this->rule->getId());
+                }
             } catch (\Exception $e) {
                 $this->rule = null;
             }
