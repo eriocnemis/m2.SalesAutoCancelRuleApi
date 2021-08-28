@@ -84,7 +84,7 @@ class GetListTest extends WebapiAbstract
      *
      * @return void
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $objectManager = Bootstrap::getObjectManager();
 
@@ -98,7 +98,7 @@ class GetListTest extends WebapiAbstract
     /**
      * This method is called after a test is executed
      */
-    protected function tearDown()
+    protected function tearDown(): void
     {
         if (null !== $this->rule) {
             $this->ruleRepository->delete((int)$this->rule->getId());
