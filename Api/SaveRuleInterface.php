@@ -12,7 +12,7 @@ use Magento\Framework\Validation\ValidationException;
 use Eriocnemis\SalesAutoCancelRuleApi\Api\Data\RuleInterface;
 
 /**
- * Save rule data interface
+ * Save rule data
  *
  * @api
  */

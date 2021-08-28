@@ -11,7 +11,7 @@ use Magento\Framework\Validation\ValidationException;
 use Eriocnemis\SalesAutoCancelRuleApi\Api\Data\RuleInterface;
 
 /**
- * Validate rule data interface
+ * Validate rule data
  *
  * @api
  */

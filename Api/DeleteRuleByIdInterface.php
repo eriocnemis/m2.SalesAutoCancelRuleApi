@@ -11,7 +11,7 @@ use Magento\Framework\Exception\CouldNotDeleteException;
 use Magento\Framework\Exception\NoSuchEntityException;
 
 /**
- * Delete rule by id interface
+ * Delete rule by id
  *
  * @api
  */

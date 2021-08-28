@@ -10,7 +10,7 @@ namespace Eriocnemis\SalesAutoCancelRuleApi\Api\Data;
 use Magento\Framework\Api\ExtensibleDataInterface;
 
 /**
- * Rule interface
+ * Rule data interface
  *
  * @api
  */

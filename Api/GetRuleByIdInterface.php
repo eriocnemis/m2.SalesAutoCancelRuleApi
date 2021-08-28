@@ -11,7 +11,7 @@ use Magento\Framework\Exception\NoSuchEntityException;
 use Eriocnemis\SalesAutoCancelRuleApi\Api\Data\RuleInterface;
 
 /**
- * Get rule by id interface
+ * Get rule by id
  *
  * @api
  */

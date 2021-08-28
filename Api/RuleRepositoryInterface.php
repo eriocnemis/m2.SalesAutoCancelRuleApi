@@ -12,7 +12,7 @@ use Eriocnemis\SalesAutoCancelRuleApi\Api\Data\RuleInterface;
 use Eriocnemis\SalesAutoCancelRuleApi\Api\Data\RuleSearchResultInterface;
 
 /**
- * Rules repository interface
+ * Rules repository
  *
  * Repository considered as an implementation of Facade pattern which provides a simplified
  * interface for proper work of WebApi request parser.
