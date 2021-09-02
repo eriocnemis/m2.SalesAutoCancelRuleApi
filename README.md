@@ -1,6 +1,6 @@
-# Magento2 Sales Auto Cancel Rule Api
+# Magento2 Sales AutoCancel Rule Api
 
-The module serves as application program interface (API) responsible for functionality of order auto cancel rules manage as well as bulk operations. This module is installed as part of [Sales Auto Cancel Rule Kit](https://github.com/eriocnemis/m2.SalesAutoCancelRuleKit). It cannot be deleted or disabled.
+The module serves as application program interface (API) responsible for functionality of order auto cancel rules manage as well as bulk operations. This module is installed as part of [Sales AutoCancel Rule Kit](https://github.com/eriocnemis/m2.SalesAutoCancelRuleKit). It cannot be deleted or disabled.
 
 ## Extensibility
 
