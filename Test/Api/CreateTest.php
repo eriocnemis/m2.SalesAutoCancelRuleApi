@@ -90,7 +90,7 @@ class CreateTest extends WebapiAbstract
      *
      * @return void
      */
-    protected function setUp(): void
+    protected function setUp()
     {
         $objectManager = Bootstrap::getObjectManager();
 
@@ -107,7 +107,7 @@ class CreateTest extends WebapiAbstract
      *
      * @return void
      */
-    protected function tearDown(): void
+    protected function tearDown()
     {
         if (null !== $this->rule) {
             $this->ruleRepository->delete((int)$this->rule->getId());
